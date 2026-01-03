@@ -17,7 +17,7 @@ OBD-II (On-Board Diagnostics) mode handles emissions-related data (e.g., RPM, Sp
 - **0x3E (Tester Present)[UDS]**: Keeps session active (prevents timeout).
 
 ## NRC Meanings
-See lab manual for list. In context:
+See [Lab Manual](https://github.com/OmarMohsen9/uds-vulnerable-ecu-lab/blob/main/docs/lab_manual.md) for list. In context:
 - 0x13/0x12: Protects against malformed requests.
 - 0x33: Enforces security levels.
 - 0x35-0x37: Anti-brute-force mechanisms (invalid key, too many tries, delay).
