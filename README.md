@@ -1,6 +1,23 @@
-# Virtual UDS ECU Security Lab
+# uds-vulnerable-ecu-lab
 
-A virtual lab for exploring UDS (ISO 14229) and OBD-II vulnerabilities in a simulated automotive ECU.
+Virtual UDS (ISO 14229) ECU security lab demonstrating automotive diagnostic vulnerabilities: weak Security Access, session hijacking, brute-force attacks, and enumeration. Includes vulnerable ECU, legitimate tester, and attack tools on virtual CAN bus. Educational only.
+
+## Overview
+
+This repository provides a fully virtual, safe-to-use laboratory for exploring common security weaknesses in automotive diagnostic protocols (UDS and OBD-II).  
+
+It simulates a real-world Electronic Control Unit (ECU) with intentionally vulnerable implementations of key UDS services — particularly Security Access (Service 27) — allowing you to observe, exploit, and understand how poor diagnostic security can be bypassed.
+
+Everything runs on a virtual CAN bus (`vcan0`) using Python and SocketCAN — no hardware required.
+
+Key goal:
+- Demonstrate common UDS (ISO 14229) security vulnerabilities in a safe virtual environment
+- Show practical attacks like weak seed/key bypass, session hijacking, and brute-force, along with mitigations
+- Provide hands-on experience with real UDS services and OBD-II diagnostics
+
+## Team Members
+- [Mohamed Bedier](https://github.com/MohamedBedier)
+- [Omar Mohsen](https://github.com/OmarMohsen9)
 
 ## Installation
 
@@ -61,4 +78,4 @@ candump vcan0
   
 Run each in separate terminals. Use `tester.py` for normal ops, `attack.py` for exploits.
 
-For detailed usage, see docs/lab_manual.md. For a more technical in-depth dive, see docs/technical_documentation.md.
+For detailed usage, see [Lab Manual](https://github.com/OmarMohsen9/uds-vulnerable-ecu-lab/blob/main/docs/lab_manual.md). For a more technical in-depth dive, see [Technical Documentation](https://github.com/OmarMohsen9/uds-vulnerable-ecu-lab/blob/main/docs/technical_documentation.md).
