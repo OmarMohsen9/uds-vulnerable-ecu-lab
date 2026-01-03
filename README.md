@@ -53,7 +53,12 @@ python3 attack.py
 ```
 * Interactive console: `r` (toggle reverse-capture), `g` (test candidates), `m` (MITM), `b` (brute-force), `ed/er/ep` (enumerate DID/RID/PID), `z` (reset CAN), `h` (help), `q` (quit).
 * Send raw hex payloads directly.
-
+  
+4. Open candump for better visualization of the CAN bus
+```bash
+candump vcan0
+```
+  
 Run each in separate terminals. Use `tester.py` for normal ops, `attack.py` for exploits.
 
 For detailed usage, see docs/lab_manual.md. For a more technical in-depth dive, see docs/technical_documentation.md.
